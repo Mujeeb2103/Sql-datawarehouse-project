@@ -1,12 +1,12 @@
 --Inserting Data Into bronze.crm_cust_info
 
-BULK INSERT bronze.crm_cust_info
-from 'C:\Users\mujju\Downloads\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
-WITH (
+ BULK INSERT bronze.crm_cust_info
+ from 'C:\Users\mujju\Downloads\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
+ WITH (
  FIRSTROW = 2,
  FIELDTERMINATOR = ',',
  TABLOCK
-);
+ );
 
 --Inserting Data Into bronze.crm_prd_info
 
